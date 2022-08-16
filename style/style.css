@@ -5,3 +5,54 @@
   --ashGrey-bs-: rgb(185, 183, 167);
   --sonicSilver-bs-: rgb(116, 114, 116);
 }
+@font-face {
+  font-family: cond;
+  src: url(../assests/fonts/Intro\ Cond\ Light\ Free.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header{
+  height: 3.5rem;
+  background-color: var(--darkBlue-bs-);
+}
+.sidebar{
+  background-color: var(--sonicSilver-bs-);
+}
+.center{
+  background-color: var(--ashGrey-bs-);
+}
+.advertisement{
+  background-color: var(--grullo-bs-);
+}
+h2{
+  font-family: cond;
+  color: var(--darkBlue-bs-);
+}
+.listSidebar{
+  background-color: transparent;
+  border: 2px solid;
+  border-color: var(--grullo-bs-);
+}
+a:hover{
+  background-color:rgba(206, 195, 180, 0.761);
+  transition: 1s ease;
+  color: var(--darkBlue-bs-);
+  transform: scale(1.025);
+}
+a{
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--grullo-bs-);
+}
+.footer{
+  height: 3.5rem;
+  background-color: var(--darkBlue-bs-);
+}
+@media (max-width:768px){
+  .advertisement{
+    display: none;
+  }
+}

@@ -1,0 +1,201 @@
+:root {
+  --darkBlue-bs-: rgb(78, 81, 102);
+  --lightBlue-bs-: rgb(124, 144, 160);
+  --grullo-bs-: rgb(181, 170, 157);
+  --ashGrey-bs-: rgb(185, 183, 167);
+  --sonicSilver-bs-: rgb(116, 114, 116);
+  --blueGradient-bs-: radial-gradient(
+    circle,
+    rgba(78, 81, 102, 1) 37%,
+    rgba(68, 71, 89, 1) 90%
+  );
+}
+@font-face {
+  font-family: henriDidot;
+  src: url(../assests/fonts/HenriDidot.otf);
+}
+@font-face {
+  font-family: dancingScript;
+  src: url(../assests/fonts/Dancing\ Script.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* HEADER */
+h1 {
+  font-family: dancingScript;
+  padding-right: 2rem;
+  color: rgb(185, 183, 167);
+}
+.containerHeader {
+  background-color: var(--sonicSilver-bs-);
+}
+.botonBuscar button {
+  color: rgba(255, 255, 255, 0.971);
+}
+header .containerHeader .navbar .container-fluid .collapse ul li a {
+  color: rgb(124, 144, 160);
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 25px;
+}
+header .containerHeader .navbar .container-fluid .collapse ul li a:hover {
+  color: rgb(174, 204, 226);
+  transition: 0.8s;
+}
+.botonBuscar button:hover {
+  color: rgb(54, 55, 71);
+  background-color: rgb(185, 183, 167);
+}
+header .containerHeader .navbar .container-fluid .collapse ul {
+  padding-left: 10rem;
+}
+/* CONTENEDORES DEL MAIN */
+.sidebar {
+  background: rgb(78, 81, 102);
+  background: var(--blueGradient-bs-);
+}
+.center {
+  background-color: rgb(221, 218, 214);
+}
+.advertisement {
+  background-color: var(--grullo-bs-);
+}
+/* TITULOS */
+h2 {
+  font-family: cond;
+  color: var(--darkBlue-bs-);
+}
+/* EFECTO SIDEBAR */
+.listSidebar {
+  background-color: transparent;
+  border: none;
+  list-style: none;
+}
+.sidebar ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.sidebar li {
+  float: none;
+  width: 90%;
+  padding: 4px;
+}
+.sidebar li a {
+  display: block;
+  width: 90%;
+  padding: 10px;
+  border-left: 5px solid;
+  position: relative;
+  z-index: 2;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: rgb(240, 240, 240);
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-radius: 10px;
+}
+.sidebar li a:hover {
+  border-bottom: 0px;
+  color: white;
+}
+.sidebar li:first-child a {
+  border-left: 10px solid rgb(124, 144, 160);
+}
+.sidebar li:nth-child(2) a {
+  border-left: 10px solid rgb(124, 144, 160);
+}
+.sidebar li:nth-child(3) a {
+  border-left: 10px solid rgb(124, 144, 160);
+}
+.sidebar li:last-child a {
+  border-left: 10px solid rgb(124, 144, 160);
+}
+.sidebar li a:after {
+  content: "";
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 0px;
+  position: absolute;
+  transition: all 0.2s ease 0s;
+  -webkit-transition: all 0.2s ease 0s;
+  z-index: -1;
+}
+.sidebar li a:hover:after {
+  width: 85%;
+  border-end-end-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.sidebar li:first-child a:after {
+  background: rgb(124, 144, 160);
+}
+.sidebar li:nth-child(2) a:after {
+  background: rgb(124, 144, 160);
+}
+.sidebar li:nth-child(3) a:after {
+  background: rgb(124, 144, 160);
+}
+.sidebar li:last-child a:after {
+  background: rgb(124, 144, 160);
+}
+/* DETALLE DE COMPRA */
+.purchaseImg {
+  height: 50%;
+  width: 40%;
+}
+.purchaseContainer {
+  padding-bottom: 3.2rem;
+}
+h3,
+h6 {
+  text-align: center;
+}
+.productText {
+  padding: 1rem;
+  text-align: justify;
+  font-size: 0.9rem;
+}
+.quantitySelector {
+  background-color: rgb(254, 254, 254);
+  width: 60%;
+  margin-right: 0;
+}
+
+/* FOOTER */
+.footer {
+  height: 3.5rem;
+  background-color: var(--sonicSilver-bs-);
+}
+@media (max-width: 768px) {
+  .advertisement {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .sidebar li a {
+    display: block;
+    width: 85%;
+    border-left: 5px solid;
+    position: relative;
+    z-index: 2;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: rgb(240, 240, 240);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-radius: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .sidebar li a {
+    width: 70px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

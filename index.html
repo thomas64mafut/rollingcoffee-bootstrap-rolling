@@ -11,56 +11,53 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="icon" href="" />
+    <link rel="icon" href="./assests/images/isologo.png" />
   </head>
   <body>
-    <header class="header text-light">
+    <header>
       <div class="containerHeader">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-
-              <h1>Rolling Cofee</h1>
-              
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Login </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Acerca de nosotros</a>
-                    </li>
-                  </ul>
-                
-                <div class="botonBuscar">
-                  <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                    <button class= "btn btn-outline-secondary" type="submit">Buscar</button>
-                  </form>
+          <nav class="navbar navbar-expand-lg navbar-light">
+              <div class="container-fluid">
+                <h1>Rolling Cofee</h1>               
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Login </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Acerca de nosotros</a>
+                      </li>
+                    </ul>
+                  <div class="botonBuscar">
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                      <button class= "btn btn-outline-secondary" type="submit">Buscar</button>
+                    </form>
+                  </div>
                 </div>
-                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
               </div>
-            </div>
-          </nav>
-    </div>
+            </nav>
+      </div>
     </header>
     <!-- MAIN -->
     <main>
-      <div class="container-fluid">SOY UN VIDEO</div>
+      <div class="container-fluid videoContainer m-0 p-0">
+        <video src="./assests/videos/cafe2.mp4" loop class="mb-0 p-0"></video>
+      </div>
       <section>
-        <div class="container-fluid gridContainer">
+        <div class="container-fluid">
           <div class="row">
             <!-- SIDEBAR -->
             <div class="sidebar col-3 col-md-2 col-lg-2 text-light">
               <ul class="list-group mt-4">
                 <li class="list-group-item listSidebar">
-                  <a href=""> De especialidad </a>
+                  <a href=""> Especialidad </a>
                 </li>
                 <li class="list-group-item listSidebar">
                   <a href=""> Tostado </a>
@@ -75,7 +72,7 @@
             </div>
             <!-- CENTER -->
             <div class="center col-9 col-md-8 col-lg-8">
-              <div class="d-flex flex-row align-items-center justify-content-between">
+              <div class="d-flex flex-wrap-reverse align-items-center justify-content-between">
                 <h2 class="my-4">Café de especialidad</h2>
                 <div class="dropdown mt-2">
                   <button
@@ -97,7 +94,116 @@
                 </div>
               </div>
               <!-- CARDS -->
-              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 ms-5 gy-5">
+              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 ms-4 gy-5">
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="./assests/images/coffeeBag.png"
+                      class="card-img-top"
+                      alt="bolsa de café"/>
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Amazonas Blend</h5>
+                      <p class="card-text text-center">
+                        Mezcla de granos. Origen: Brasil y Colombia.
+                        <a class="btn cardButton" role="button" href="purchaseDetails.html"> Ver Más
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="./assests/images/bolsaDePapel.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Card title</h5>
+                      <p class="card-text">
+                        This is a longer card with supporting text below as a
+                        natural lead-in to additional content.
+                        <button class="btn cardButton"> Ver Más
+                        </button>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="./assests/images/bolsaDePapel.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Card title</h5>
+                      <p class="card-text">
+                        This is a longer card with supporting text below as a
+                        natural lead-in to additional content.
+                        <button class="btn cardButton"> Ver Más
+                        </button>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="./assests/images/bolsaDePapel.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Card title</h5>
+                      <p class="card-text">
+                        This is a longer card with supporting text below as a
+                        natural lead-in to additional content.
+                        <button class="btn cardButton"> Ver Más
+                        </button>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="./assests/images/bolsaDePapel.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Card title</h5>
+                      <p class="card-text">
+                        This is a longer card with supporting text below as a
+                        natural lead-in to additional content.
+                        <button class="btn cardButton"> Ver Más
+                        </button>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="./assests/images/bolsaDePapel.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Card title</h5>
+                      <p class="card-text">
+                        This is a longer card with supporting text below as a
+                        natural lead-in to additional content.
+                        <button class="btn cardButton"> Ver Más
+                        </button>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="my-4">Café tostado</h2>
+              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 ms-4 gy-5">
                 <div class="col">
                   <div class="card">
                     <img
@@ -207,98 +313,11 @@
                   </div>
                 </div>
               </div>
-              <h2 class="my-4">Café de orgánico</h2>
-              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 ms-5 gy-5">
-                <div class="col">
-                  <div class="card">
-                    <img src="..." class="card-img-top" alt="..." />
-                    <div class="card-body">
-                      <h5 class="card-title text-center">Card title</h5>
-                      <p class="card-text">
-                        This is a longer card with supporting text below as a
-                        natural lead-in to additional content.
-                        <button class="btn cardButton"> Ver Más
-                        </button>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card">
-                    <img src="..." class="card-img-top" alt="..." />
-                    <div class="card-body">
-                      <h5 class="card-title text-center">Card title</h5>
-                      <p class="card-text">
-                        This is a longer card with supporting text below as a
-                        natural lead-in to additional content.
-                        <button class="btn cardButton"> Ver Más
-                        </button>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card">
-                    <img src="..." class="card-img-top" alt="..." />
-                    <div class="card-body">
-                      <h5 class="card-title text-center">Card title</h5>
-                      <p class="card-text">
-                        This is a longer card with supporting text below as a
-                        natural lead-in to additional content.
-                        <button class="btn cardButton"> Ver Más
-                        </button>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card">
-                    <img src="..." class="card-img-top" alt="..." />
-                    <div class="card-body">
-                      <h5 class="card-title text-center">Card title</h5>
-                      <p class="card-text">
-                        This is a longer card with supporting text below as a
-                        natural lead-in to additional content.
-                        <button class="btn cardButton"> Ver Más
-                        </button>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card">
-                    <img src="..." class="card-img-top" alt="..." />
-                    <div class="card-body">
-                      <h5 class="card-title text-center">Card title</h5>
-                      <p class="card-text">
-                        This is a longer card with supporting text below as a
-                        natural lead-in to additional content.
-                        <button class="btn cardButton"> Ver Más
-                        </button>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card">
-                    <img src="..." class="card-img-top" alt="..." />
-                    <div class="card-body">
-                      <h5 class="card-title text-center">Card title</h5>
-                      <p class="card-text">
-                        This is a longer card with supporting text below as a
-                        natural lead-in to additional content.
-                        <button class="btn cardButton"> Ver Más
-                        </button>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
               <!-- PAGINADO -->
               <nav aria-label="Page navigation">
                 <ul class="pagination justify-content-center mt-4">
                   <li class="page-item active">
-                    <a class="page-link" href="index.html"
+                    <a class="page-link mx-0 mx-lg-2" href="index.html"
                       ><svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -311,16 +330,16 @@
                         <path fill-rule="evenodd" d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg></a>
                   </li>
                   <li class="page-item active">
-                    <a class="page-link" href="index.html">1</a>
+                    <a class="page-link mx-0 mx-lg-2" href="index.html">1</a>
                   </li>
                   <li class="page-item active">
-                    <a class="page-link" href="capsulesPage.html">2</a>
+                    <a class="page-link mx-0 mx-lg-2" href="capsulesPage.html">2</a>
                   </li>
                   <li class="page-item active">
-                    <a class="page-link" href="#">3</a>
+                    <a class="page-link mx-0 mx-lg-2" href="#">3</a>
                   </li>
                   <li class="page-item active">
-                    <a class="page-link" href="capsulesPage.html"
+                    <a class="page-link mx-0 mx-lg-2" href="capsulesPage.html"
                       ><svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -337,7 +356,7 @@
             </div>
             <!-- PUBLICIDAD -->
             <div class="advertisement col-12 col-md-2 col-lg-2 text-light">
-              PUBLICIDAD
+              <img src="./assests/images/publicity.jpeg" class="publicity mt-4" alt="Publicidad">
             </div>
           </div>
         </div>

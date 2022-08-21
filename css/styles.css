@@ -1,24 +1,23 @@
 :root {
-  --darkBlue-bs-: rgb(78, 81, 102);
-  --lightBlue-bs-: rgb(124, 144, 160);
-  --grullo-bs-: rgb(181, 170, 157);
-  --ashGrey-bs-: rgb(185, 183, 167);
+  --brown-bs-: rgb(101, 54, 42);
+  --sweetMint-bs-: rgb(255, 255, 255);
+  --mint-bs-: rgb(117, 209, 195);
+  --ashGrey-bs-: rgba(119,109,109,1);
   --sonicSilver-bs-: rgb(116, 114, 116);
-  --blueGradient-bs-: radial-gradient(
-    circle,
-    rgba(78, 81, 102, 1) 37%,
-    rgba(68, 71, 89, 1) 90%
-  );
 }
 @font-face {
   font-family: henriDidot;
   src: url(../assests/fonts/HenriDidot.otf);
 }
 @font-face {
-  font-family: dancingScript;
-  src: url(../assests/fonts/Dancing\ Script.ttf);
+  font-family: pacifico;
+  src: url(../assests/fonts/Pacifico.ttf);
 }
-
+@font-face {
+  font-family: test1;
+  src: url(../assests/fonts/Exo2.0-Italic.otf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -26,47 +25,65 @@
 }
 /* HEADER */
 h1{
-  font-family:dancingScript;
+  font-family:pacifico;
   padding-right: 2rem;  
-  color: rgb(185, 183, 167);
+  color: var(--mint-bs-);
 }
 .containerHeader{
-  background-color: var(--sonicSilver-bs-);
+  background-color: var(--ashGrey-bs-);
 }
-.botonBuscar button{
-  color: rgba(255, 255, 255, 0.971) 
-} 
-header .containerHeader .navbar .container-fluid .collapse  ul li a{
-  color: rgb(124, 144, 160);
+.containerHeader .collapse > ul a{
+  color: var(--sweetMint-bs-);
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 25px;
+  font-size: 1.5rem;
 }
-header .containerHeader .navbar .container-fluid .collapse ul li a:hover{
-  color: rgb(174, 204, 226);
+.containerHeader .collapse > ul a:hover{
+  color: var(--mint-bs-);
   transition:.8s;
 }
+.botonBuscar button{
+  color: var(--sweetMint-bs-);
+  background-color: var(--mint-bs-);
+  width: 6.3rem;
+  font-size: 1.05rem;
+  border-radius: 15px;
+  border-color: var(--mint-bs-);
+  font-family: test1;
+} 
 .botonBuscar button:hover{
-  color:rgb(54, 55, 71);
-  background-color:rgb(185, 183, 167);
+  color:var(--sweetMint-bs-);
+  background-color:var(--brown-bs-);
 }
-header .containerHeader .navbar .container-fluid .collapse  ul{
-  padding-left: 10rem;
+.search {
+  margin-right:-4rem;
+  border-radius: 15px;
+}
+.collapseNavButton{
+  border-color: var(--mint-bs-);
 }
 /* CONTENEDORES DEL MAIN */
 .sidebar {
-  background: rgb(78, 81, 102);
-  background: var(--blueGradient-bs-);
+  background: var(--ashGrey-bs-);
 }
 .center {
-  background-color: rgb(221, 218, 214);
+  background-color: var(--sweetMint-bs-);
 }
 .advertisement {
-  background-color: var(--grullo-bs-);
+  background-color: var(--ashGrey-bs-);
+}
+.videoContainer{
+  width: 100%;
+  height: 80vh;
+}
+.videoContainer > video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 /* TITULOS */
 h2 {
   font-family: cond;
-  color: var(--darkBlue-bs-);
+  color: var(--brown-bs-);
 }
 /* EFECTO SIDEBAR */
 .listSidebar {
@@ -93,7 +110,7 @@ h2 {
   z-index: 2;
   font-size: 1.1rem;
   text-decoration: none;
-  color: rgb(240, 240, 240);
+  color: white;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -101,19 +118,19 @@ h2 {
 }
 .sidebar li a:hover {
   border-bottom: 0px;
-  color: white;
+  color: rgb (15, 24, 26);
 }
 .sidebar li:first-child a {
-  border-left: 10px solid rgb(124, 144, 160);
+  border-left: 10px solid rgb(117, 209, 195);
 }
 .sidebar li:nth-child(2) a {
-  border-left: 10px solid rgb(124, 144, 160);
+  border-left: 10px solid rgb(117, 209, 195);
 }
 .sidebar li:nth-child(3) a {
-  border-left: 10px solid rgb(124, 144, 160);
+  border-left: 10px solid rgb(117, 209, 195);
 }
 .sidebar li:last-child a {
-  border-left: 10px solid rgb(124, 144, 160);
+  border-left: 10px solid rgb(117, 209, 195);
 }
 .sidebar li a:after {
   content: "";
@@ -132,23 +149,23 @@ h2 {
   border-top-right-radius: 10px;
 }
 .sidebar li:first-child a:after {
-  background: rgb(124, 144, 160);
+  background: rgb(117, 209, 195);
 }
 .sidebar li:nth-child(2) a:after {
-  background: rgb(124, 144, 160);
+  background: rgb(117, 209, 195);
 }
 .sidebar li:nth-child(3) a:after {
-  background: rgb(124, 144, 160);
+  background: rgb(117, 209, 195);
 }
 .sidebar li:last-child a:after {
-  background: rgb(124, 144, 160);
+  background: rgb(117, 209, 195);
 }
 /* EFECTOS CARDS */
 .card {
-  width: 15rem;
-  height: 15rem;
-  border: 4px solid;
-  border-color: rgb(221, 218, 214);
+  width: 90%;
+  height: 90%;
+  border: 1px solid;
+  border-color: var(--sweetMint-bs-);
   cursor: pointer;
   transition: all 0.25s ease;
   backface-visibility: hidden;
@@ -195,8 +212,8 @@ h2 {
   color: rgb(27, 27, 27);
   border-radius: 10px;
   font-weight: 400;
-  padding: 5px;
   height: 100%;
+  width: 100%;
 }
 .card .card-body > p {
   font-size: 1rem;
@@ -204,24 +221,23 @@ h2 {
   transition: all 0.25s ease;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
   flex-direction: column;
-  padding-top: 2.5rem;
 }
 .cardButton {
   border-radius: 30px;
-  border: 1px solid black;
+  border: 1px solid var(--mint-bs-);
+  margin-top: 0.5rem;
 }
 .cardButton:hover {
-  background-color: var(--lightBlue-bs-);
-  color: aliceblue;
+  background-color: var(--mint-bs-);
+  color: var(--sweetMint-bs-);
   transition: 0.1s;
-  border: 1px solid var(--lightBlue-bs-);
+  border: 1px solid var(--mint-bs-);
   border-radius: 30px;
 }
 /* ESTILO PAGINADO */
 .pagination .active a {
-  background-color: var(--lightBlue-bs-);
+  background-color: var(--mint-bs-);
   border: none;
   border-radius: 30px;
 }
@@ -230,8 +246,15 @@ h2 {
   border-radius: 30px;
 }
 .pagination .active a:hover {
-  background-color: var(--darkBlue-bs-);
+  background-color: var(--brown-bs-);
   border: none;
+}
+/* PUBLICIDAD */
+.publicity{
+  height: 45vh;
+  width: 15vw;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
 }
 /* FOOTER */
 .footer {

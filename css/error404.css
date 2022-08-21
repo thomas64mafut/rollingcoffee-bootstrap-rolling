@@ -1,19 +1,14 @@
-:root {
-  --darkBlue-bs-: rgb(78, 81, 102);
-  --lightBlue-bs-: rgb(124, 144, 160);
-  --grullo-bs-: rgb(181, 170, 157);
-  --ashGrey-bs-: rgb(185, 183, 167);
-  --sonicSilver-bs-: rgb(116, 114, 116);
-}
-
 h1 {
   margin: 0;
   padding: 0;
+  color: var(--brown-bs-);
 }
-
+h3 {
+  margin: 0;
+  padding: 0;
+}
 body {
-  background-color: var(--ashGrey-bs-);
-  color: var(--sonicSilver-bs-);
+  background-color: var(--sweetMint-bs-);
 }
 .mainContainer {
   height: calc(100vh - 8rem);
@@ -23,35 +18,33 @@ body {
   background-image: url("https://images.pexels.com/photos/977878/pexels-photo-977878.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-size: cover;
   background-position: center bottom;
-  border: 4px var(--sonicSilver-bs-) solid;
 }
 
-.loginContainer > div {
-  height: 100%;
+.errorContainer h2 {
+  font-size: 80px;
 }
 
-.btn-outline-darkBlue {
-  background-color: var(--lightBlue-bs-);
-  color: var(--darkBlue-bs-);
-
-  font-size: x-large;
-
-  margin-bottom: 5rem;
-  width: 40%;
-  height: 6rem;
-  border-radius: 3rem;
+.errorContainer h3 {
+  font-size: 20px;
 }
 
-.btn-outline-darkBlue:hover {
-  background-color: var(--darkBlue-bs-);
-  color: var(--ashGrey-bs-);
+.errorContainer > button {
+  width: 12rem;
 }
 
 @media (max-width: 768px) {
-  .loginContainer {
+  .errorContainer {
     background-image: url("https://images.pexels.com/photos/977878/pexels-photo-977878.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-size: cover;
     background-position: center bottom;
-    border: 4px var(--sonicSilver-bs-) solid;
+  }
+}
+@media (max-width: 370px) {
+  .errorContainer h2 {
+    font-size: 50px;
+  }
+
+  .errorContainer h3 {
+    font-size: 16px;
   }
 }

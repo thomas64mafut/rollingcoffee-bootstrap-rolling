@@ -2,63 +2,98 @@
   --brown-bs-: rgb(101, 54, 42);
   --sweetMint-bs-: rgb(255, 255, 255);
   --mint-bs-: rgb(117, 209, 195);
-  --ashGrey-bs-: rgba(119,109,109,1);
+  --ashGrey-bs-: rgba(119, 109, 109, 1);
   --sonicSilver-bs-: rgb(116, 114, 116);
 }
+
 @font-face {
   font-family: henriDidot;
   src: url(../assests/fonts/HenriDidot.otf);
 }
+
 @font-face {
   font-family: pacifico;
   src: url(../assests/fonts/Pacifico.ttf);
 }
+
 @font-face {
-  font-family: test1;
-  src: url(../assests/fonts/Exo2.0-Italic.otf);
+  font-family: victorBold;
+  src: url(../assests/fonts/VictorMono-Bold.otf);
 }
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
+@font-face {
+  font-family: victorBoldItalic;
+  src: url(../assests/fonts/VictorMono-BoldItalic.otf);
+}
+
+@font-face {
+  font-family: victorMedium;
+  src: url(../assests/fonts/VictorMono-Medium.otf);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* BOTONES */
+.btnCoffee {
+  background-color: var(--mint-bs-);
+  color: var(--sweetMint-bs-);
+  border-radius: 30px;
+  transition: 0.1s;
+}
+
+.btnCoffee:hover {
+  background-color: var(--brown-bs-);
+  color: var(--sweetMint-bs-);
+  border-color: var(--brown-bs-);
+  transition: 0.1s;
+}
+
 /* HEADER */
-h1{
-  font-family:pacifico;
-  padding-right: 2rem;  
+h1 {
+  font-family: pacifico;
+  padding-right: 2rem;
   color: var(--mint-bs-);
 }
-.containerHeader{
+/* TITULOS */
+h2 {
+  font-family: victorBoldItalic;
+  color: var(--brown-bs-);
+}
+
+body {
+  font-family: victorBold;
+}
+.containerHeader {
   background-color: var(--ashGrey-bs-);
 }
-.containerHeader .collapse > ul a{
+.containerHeader .collapse > ul a {
   color: var(--sweetMint-bs-);
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   font-size: 1.5rem;
 }
-.containerHeader .collapse > ul a:hover{
+.containerHeader .collapse > ul a:hover {
   color: var(--mint-bs-);
-  transition:.8s;
+  transition: 0.8s;
 }
-.botonBuscar button{
-  color: var(--sweetMint-bs-);
-  background-color: var(--mint-bs-);
+.botonBuscar button {
   width: 6.3rem;
   font-size: 1.05rem;
-  border-radius: 15px;
-  border-color: var(--mint-bs-);
-  font-family: test1;
-} 
-.botonBuscar button:hover{
-  color:var(--sweetMint-bs-);
-  background-color:var(--brown-bs-);
+}
+.botonBuscar button:hover {
+  color: var(--sweetMint-bs-);
+  background-color: var(--brown-bs-);
 }
 .search {
-  margin-right:-4rem;
+  margin-right: -4rem;
   border-radius: 15px;
 }
-.collapseNavButton{
+.collapseNavButton {
   border-color: var(--mint-bs-);
 }
 /* CONTENEDORES DEL MAIN */
@@ -71,20 +106,16 @@ h1{
 .advertisement {
   background-color: var(--ashGrey-bs-);
 }
-.videoContainer{
+.videoContainer {
   width: 100%;
   height: 80vh;
 }
-.videoContainer > video{
+.videoContainer > video {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-/* TITULOS */
-h2 {
-  font-family: cond;
-  color: var(--brown-bs-);
-}
+
 /* EFECTO SIDEBAR */
 .listSidebar {
   background-color: transparent;
@@ -222,6 +253,7 @@ h2 {
   display: flex;
   align-items: center;
   flex-direction: column;
+  font-family: victorMedium;
 }
 .cardButton {
   border-radius: 30px;
@@ -250,7 +282,7 @@ h2 {
   border: none;
 }
 /* PUBLICIDAD */
-.publicity{
+.publicity {
   height: 45vh;
   width: 15vw;
   border-bottom-right-radius: 20px;

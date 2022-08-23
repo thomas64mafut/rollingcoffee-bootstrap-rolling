@@ -7,28 +7,13 @@
 }
 
 @font-face {
-  font-family: henriDidot;
-  src: url(../assests/fonts/HenriDidot.otf);
-}
-
-@font-face {
   font-family: pacifico;
   src: url(../assests/fonts/Pacifico.ttf);
 }
 
 @font-face {
-  font-family: victorBold;
-  src: url(../assests/fonts/VictorMono-Bold.otf);
-}
-
-@font-face {
   font-family: victorBoldItalic;
   src: url(../assests/fonts/VictorMono-BoldItalic.otf);
-}
-
-@font-face {
-  font-family: victorMedium;
-  src: url(../assests/fonts/VictorMono-Medium.otf);
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
@@ -67,7 +52,7 @@ h2 {
 }
 
 body {
-  font-family: victorBold;
+  font-family: "Barlow Condensed", sans-serif;
 }
 .containerHeader {
   background-color: var(--ashGrey-bs-);
@@ -253,7 +238,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  font-family: victorMedium;
+  font-family: "Barlow Condensed", sans-serif;
 }
 .cardButton {
   border-radius: 30px;

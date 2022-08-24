@@ -275,7 +275,6 @@ body {
 }
 /* FOOTER */
 .footer {
-  height: 3.5rem;
   background-color: var(--sonicSilver-bs-);
 }
 @media (max-width: 768px) {

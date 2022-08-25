@@ -2,20 +2,17 @@
   --brown-bs-: rgb(101, 54, 42);
   --sweetMint-bs-: rgb(255, 255, 255);
   --mint-bs-: rgb(117, 209, 195);
-  --ashGrey-bs-: rgba(119, 109, 109, 1);
-  --sonicSilver-bs-: rgb(116, 114, 116);
+  --ashGrey-bs-: rgba(119,109,109,1);
+  --sonicSilver-bs-: rgb(99, 91, 91);
 }
-
 @font-face {
   font-family: pacifico;
   src: url(../assests/fonts/Pacifico.ttf);
 }
-
 @font-face {
   font-family: victorBoldItalic;
   src: url(../assests/fonts/VictorMono-BoldItalic.otf);
 }
-
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
 
 * {
@@ -23,63 +20,71 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-/* BOTONES */
 .btnCoffee {
   background-color: var(--mint-bs-);
   color: var(--sweetMint-bs-);
   border-radius: 30px;
   transition: 0.1s;
 }
-
 .btnCoffee:hover {
   background-color: var(--brown-bs-);
   color: var(--sweetMint-bs-);
   border-color: var(--brown-bs-);
   transition: 0.1s;
 }
-
 /* HEADER */
-h1 {
-  font-family: pacifico;
-  padding-right: 2rem;
-  color: var(--mint-bs-);
+.logo {
+  height: 4rem;
+  width: 16rem;
+  background-image: url(../assets/images/whiteIsologo.png);
+  background-size: cover;
+  background-position:center;
 }
-/* TITULOS */
-h2 {
-  font-family: victorBoldItalic;
-  color: var(--brown-bs-);
-}
-
 body {
   font-family: "Barlow Condensed", sans-serif;
 }
-.containerHeader {
-  background-color: var(--ashGrey-bs-);
+.containerHeader{
+  background-color: var(--sonicSilver-bs-);
 }
-.containerHeader .collapse > ul a {
+.containerHeader .collapse > ul a{
   color: var(--sweetMint-bs-);
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   font-size: 1.5rem;
 }
-.containerHeader .collapse > ul a:hover {
+.containerHeader .collapse > ul a:hover{
   color: var(--mint-bs-);
-  transition: 0.8s;
+  transition:.8s;
 }
-.botonBuscar button {
+.botonBuscar button{
   width: 6.3rem;
   font-size: 1.05rem;
-}
-.botonBuscar button:hover {
-  color: var(--sweetMint-bs-);
-  background-color: var(--brown-bs-);
+} 
+.botonBuscar button:hover{
+  color:var(--sweetMint-bs-);
+  background-color:var(--brown-bs-);
 }
 .search {
-  margin-right: -4rem;
+  margin-right:-4rem;
   border-radius: 15px;
 }
-.collapseNavButton {
+.collapseNavButton{
   border-color: var(--mint-bs-);
+}
+.botonBuscar button{
+  color: var(--sweetMint-bs-);
+  background-color: var(--mint-bs-);
+  width: 6.3rem;
+  font-size: 1rem;
+  border-radius: 15px;
+  border-color: var(--mint-bs-);
+} 
+.botonBuscar button:hover{
+  color:var(--sweetMint-bs-);
+  background-color:var(--brown-bs-);
+}
+.search {
+  margin-right:-4rem;
+  border-radius: 15px;
 }
 /* CONTENEDORES DEL MAIN */
 .sidebar {
@@ -91,16 +96,20 @@ body {
 .advertisement {
   background-color: var(--ashGrey-bs-);
 }
-.videoContainer {
+.videoContainer{
   width: 100%;
   height: 80vh;
 }
-.videoContainer > video {
+.videoContainer > video{
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
+/* TITULOS */
+h2 {
+  font-family: victorBoldItalic;
+  color: var(--brown-bs-);
+}
 /* EFECTO SIDEBAR */
 .listSidebar {
   background-color: transparent;
@@ -178,8 +187,8 @@ body {
 }
 /* EFECTOS CARDS */
 .card {
-  width: 90%;
-  height: 90%;
+  width: 80%;
+  height: 85%;
   border: 1px solid;
   border-color: var(--sweetMint-bs-);
   cursor: pointer;
@@ -267,9 +276,10 @@ body {
   border: none;
 }
 /* PUBLICIDAD */
-.publicity {
+.publicity{
   height: 45vh;
-  width: 15vw;
+  width: 14vw;
+  padding-left: 1rem;
   border-bottom-right-radius: 20px;
   border-top-left-radius: 20px;
 }

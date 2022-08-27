@@ -1,290 +1,34 @@
-:root {
-  --brown-bs-: rgb(101, 54, 42);
-  --sweetMint-bs-: rgb(255, 255, 255);
-  --mint-bs-: rgb(117, 209, 195);
-  --ashGrey-bs-: rgba(119,109,109,1);
-  --sonicSilver-bs-: rgb(99, 91, 91);
+/* NAVBAR */
+.detailsNavbar {
+  background: rgb(158, 144, 144);
+  background: linear-gradient(
+    270deg,
+    rgba(158, 144, 144, 1) 17%,
+    rgba(139, 126, 126, 1) 81%
+  );
 }
-@font-face {
-  font-family: pacifico;
-  src: url(../assests/fonts/Pacifico.ttf);
-}
-@font-face {
-  font-family: victorBoldItalic;
-  src: url(../assests/fonts/VictorMono-BoldItalic.otf);
-}
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-.btnCoffee {
-  background-color: var(--mint-bs-);
-  color: var(--sweetMint-bs-);
-  border-radius: 30px;
-  transition: 0.1s;
-  width: 10rem;
-}
-.btnCoffee:hover {
-  background-color: var(--brown-bs-);
-  color: var(--sweetMint-bs-);
-  border-color: var(--brown-bs-);
-  transition: 0.1s;
-}
-/* HEADER */
-.logo {
-  height: 4rem;
-  width: 16rem;
-  background-image: url(../assets/images/whiteIsologo.png);
-  background-size: cover;
-  background-position:center;
-  margin-right: 1rem;
-}
-body {
-  font-family: "Barlow Condensed", sans-serif;
-}
-.containerHeader{
-  background-color: var(--sonicSilver-bs-);
-  border-bottom: 1px solid var(--mint-bs-);
-}
-.containerHeader .collapse > ul a{
-  color: var(--sweetMint-bs-);
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 1.5rem;
-}
-.containerHeader .collapse > ul a:hover{
-  color: var(--mint-bs-);
-  transition:.8s;
-}
-.botonBuscar button{
-  width: 6.3rem;
-  font-size: 1.05rem;
-} 
-.botonBuscar button:hover{
-  color:var(--sweetMint-bs-);
-  background-color:var(--brown-bs-);
-}
-.search {
-  margin-right:-4rem;
-  border-radius: 15px;
-}
-.collapseNavButton{
-  border-color: var(--mint-bs-);
-}
-.botonBuscar button{
-  color: var(--sweetMint-bs-);
-  background-color: var(--mint-bs-);
-  width: 6.3rem;
-  font-size: 1rem;
-  border-radius: 15px;
-  border-color: var(--mint-bs-);
-} 
-.botonBuscar button:hover{
-  color:var(--sweetMint-bs-);
-  background-color:var(--brown-bs-);
-}
-.search {
-  margin-right:-4rem;
-  border-radius: 15px;
-}
-/* CONTENEDORES DEL MAIN */
-.sidebar {
-  background: var(--ashGrey-bs-);
-}
-.center {
-  background-color: var(--sweetMint-bs-);
-  height: 100%;
-  padding: 0;
-}
-.advertisement {
-  background-color: var(--ashGrey-bs-);
-}
-/* EFECTO SIDEBAR */
-.listSidebar {
-  background-color: transparent;
-  border: none;
-  list-style: none;
-}
-.sidebar ul {
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-}
-.sidebar li {
-  float: none;
-  width: 90%;
-  padding: 4px;
-}
-.sidebar li a {
-  display: block;
-  width: 90%;
-  padding: 10px;
-  border-left: 5px solid;
-  position: relative;
-  z-index: 2;
-  font-size: 1.1rem;
-  text-decoration: none;
-  color: white;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  border-radius: 10px;
-  font-family: 'Barlow Condensed', sans-serif;
-}
-.sidebar li a:hover {
-  border-bottom: 0px;
-  color: rgb (15, 24, 26);
-}
-.sidebar li:first-child a {
-  border-left: 10px solid rgb(117, 209, 195);
-}
-.sidebar li:nth-child(2) a {
-  border-left: 10px solid rgb(117, 209, 195);
-}
-.sidebar li:nth-child(3) a {
-  border-left: 10px solid rgb(117, 209, 195);
-}
-.sidebar li:last-child a {
-  border-left: 10px solid rgb(117, 209, 195);
-}
-.sidebar li a:after {
-  content: "";
-  height: 100%;
-  left: 0;
-  top: 0;
-  width: 0px;
-  position: absolute;
-  transition: all 0.2s ease 0s;
-  -webkit-transition: all 0.2s ease 0s;
-  z-index: -1;
-}
-.sidebar li a:hover:after {
-  width: 100%;
-  border-end-end-radius: 10px;
-  border-top-right-radius: 10px;
-}
-.sidebar li:first-child a:after {
-  background: rgb(117, 209, 195);
-}
-.sidebar li:nth-child(2) a:after {
-  background: rgb(117, 209, 195);
-}
-.sidebar li:nth-child(3) a:after {
-  background: rgb(117, 209, 195);
-}
-.sidebar li:last-child a:after {
-  background: rgb(117, 209, 195);
-}
-
-.detailsNavbar{
-  background: rgb(158,144,144);
-  background: linear-gradient(270deg, rgba(158,144,144,1) 17%, rgba(139,126,126,1) 81%);
-}
-.homeButton, .navbarArrow {
+.homeButton,
+.navbarArrow {
   color: var(--mint-bs-);
 }
-.homeIcon{
+.homeIcon {
   color: var(--mint-bs-);
   align-items: center;
   margin-top: -5px;
   height: 20px;
   width: 22px;
 }
-.aButtonNav{
-  color:black;
+.aButtonNav {
+  color: black;
   text-decoration: none;
 }
-.aButtonNav:hover, .homeIcon:hover{
+.aButtonNav:hover,
+.homeIcon:hover {
   color: white;
   text-decoration: none;
 }
-.titleDetails{
+.titleDetails {
   padding-top: 1rem;
   font-size: 2rem;
   border-bottom: 1px solid var(--mint-bs-);
-}
-/* PUBLICIDAD */
-.publicity{
-  height: 20%;
-  width: 14vw;
-  padding-left: 1rem;
-  border-bottom-right-radius: 10px;
-  border-top-left-radius: 10px;
-}
-.detailsContainer{
-  height: 15rem;
-  width: auto;
-}
-.productImg{
-  height: 30%;
-  width: 30%;
-}
-.price::first-letter{
-color: var(--mint-bs-);
-font-size: 1.8rem;
-font-family: 'Barlow Condensed', sans-serif;
-}
-.detailsContainer > div > p{
-  text-justify:auto;
-}
-/* FOOTER */
-.footer {
-  background-color: var(--sonicSilver-bs-);
-}
-@media (max-width: 768px) {
-  .advertisement {
-    display: none;
-  }
-}
-@media (max-width: 992px) {
-  .sidebar li a {
-    display: block;
-    width: 80%;
-    border-left: 5px solid;
-    position: relative;
-    z-index: 2;
-    font-size: 0.8rem;
-    text-decoration: none;
-    color: rgb(240, 240, 240);
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    border-radius: 10px;
-  }
-}
-@media (max-width: 576px) {
-  .sidebar li a {
-    width: 70px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-}
-@media (max-width: 576px) {
-  .detailsNavbar {
-    display: none;
-  }
-}
-
-.mainContainer {
-  height: calc(100vh - 8rem);
-  overflow-y: 0;
-}
-.imgContainer {
-  background-image: url("../assets/images/coffeeBag.png");
-  background-size: cover;
-  background-position: center bottom;
-}
-
-.errorContainer h2 {
-  font-size: 80px;
-}
-
-.errorContainer h3 {
-  font-size: 20px;
-}
-
-.errorContainer > button {
-  width: 12rem;
 }

@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/purchaseDetails.css" />
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" href="../assets/images/isologo.png" />
   </head>
   <body>
@@ -68,93 +69,91 @@
     </header>
     <!-- MAIN -->
     <main>
-      <section>
-        <div class="container-fluid gridContainer">
-          <div class="row">
-            <!-- SIDEBAR -->
-            <div class="sidebar col-3 col-md-2 col-lg-2 text-light">
-              <ul class="list-group mt-5">
-                <li class="list-group-item listSidebar">
-                  <a href="/index.html"> Especialidad </a>
+      <div class="row g-0">
+        <!-- SIDEBAR -->
+        <div class="sidebar col-3 col-md-2 ps-2">
+            <ul class="list-group mt-5">
+              <li class="list-group-item listSidebar">
+                <a href="/index.html"> Especialidad </a>
+              </li>
+              <li class="list-group-item listSidebar">
+                <a href="/index.html"> Orgánico </a>
+              </li>
+              <li class="list-group-item listSidebar">
+                <a href="/pages/capsulesPage.html"> Tostado </a>
+              </li>
+              <li class="list-group-item listSidebar">
+                <a href="/pages/capsulesPage.html"> Cápsulas </a>
+              </li>
+            </ul>
+        </div>
+        <!-- CENTER -->
+        <div class="col-9 col-md-8 p-0">
+          <nav class="navbar sticky-top detailsNavbar d-none d-md-block">
+            <div class="container-fluid d-flex flex-row justify-content-end align-items-center">
+              <ul class="navbar-nav flex-row px-2">
+                <li class="nav-item homeButton px-2">
+                  <a href="../index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-house-fill homeIcon" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                    </svg>
+                  </a>
                 </li>
-                <li class="list-group-item listSidebar">
-                  <a href="/index.html"> Orgánico </a>
+                <li class="nav-item navbarArrow"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-caret-right homeIcon" viewBox="0 0 16 16">
+                  <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                </svg></li>
+                <li class="nav-item px-2">
+                  <a href="../index.html" class="aButtonNav">
+                  Café de especialidad
+                  </a>
                 </li>
-                <li class="list-group-item listSidebar">
-                  <a href="/pages/capsulesPage.html"> Tostado </a>
-                </li>
-                <li class="list-group-item listSidebar">
-                  <a href="/pages/capsulesPage.html"> Cápsulas </a>
-                </li>
+                <li class="nav-item navbarArrow"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-caret-right homeIcon" viewBox="0 0 16 16">
+                  <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                </svg></li>
+                <li class="nav-item px-2">Amazonas Blend</li>
               </ul>
             </div>
-            <!-- CENTER -->
-            <div class="center col-9 col-md-8 col-lg-8">
-              <nav class="navbar sticky-top detailsNavbar">
-                <div class="container-fluid d-flex flex-row justify-content-end align-items-center">
-                  <ul class="navbar-nav flex-row px-2">
-                    <li class="nav-item homeButton px-2">
-                      <a href="../index.html">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-house-fill homeIcon" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
-                        <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="nav-item navbarArrow"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-caret-right homeIcon" viewBox="0 0 16 16">
-                      <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
-                    </svg></li>
-                    <li class="nav-item px-2">
-                      <a href="../index.html" class="aButtonNav">
-                      Café de especialidad
-                      </a>
-                    </li>
-                    <li class="nav-item navbarArrow"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-caret-right homeIcon" viewBox="0 0 16 16">
-                      <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
-                    </svg></li>
-                    <li class="nav-item px-2">Amazonas Blend</li>
-                  </ul>
-                </div>
-              </nav>
-                <section class="detailsContainer flex-column">
-                  <div class="row mainContainer g-0 m-0">
-                    <div class="imgContainer d-md-grid col-12 col-md-6"></div>
-                    <div
-                      class="errorContainer col-12 col-md-6 p-0 g-0 d-flex flex-column justify-content-evenly align-items-center"
-                    >
-                    <div class="container-fluid d-flex flex-column justify-content-center">
-                    <h4 class="titleDetails">Amazonas Blend</h4>
-                    </div>
-                    <div class="container-fluid d-flex flex-column justify-content-center">
-                      <p>Café originario de Brasil y Colombia. Su intensidad es intermedia y de acidez leve. Tiene un suave dejo a caramelo y frutos secos.</p>
-                      <h3 class="price">$2600</h3>
-                      <a href="#" class="btn btnCoffee">Agregar al carrito</a>
-                    </div>
-                  </div>
-                
-                
-                  <!-- <div>
-                  <figure class="figure d-flex align-items-center justify-content-center mt-5 p-0">
-                    <img src="../assets/images/coffeeBag.png" class="figure-img img-fluid rounded productImg" alt="Paquete Amazonas Blend">
-                  </figure>
-                </div>
-                <div class="container-fluid d-flex flex-column justify-content-center">
-                  <h4 class="titleDetails">Amazonas Blend</h4>
-                  <p>Café originario de Brasil y Colombia. Su intensidad es intermedia y de acidez leve. Tiene un suave dejo a caramelo y frutos secos.</p>
-                  <h3 class="price">$2600</h3>
-                  <a href="#" class="btn btnCoffee">Agregar al carrito</a>
-                </div> -->
-              </section>
-            </div>
-            <!-- PUBLICIDAD -->
-            <div class="advertisement col-12 col-md-2 col-lg-2 text-light">
-              <img src="../assets/images/publicity.jpeg" class="publicity my-4" alt="Publicidad">
-              <img src="../assets/images/publicity2.jpg" class="publicity my-4" alt="Publicidad">
-              <img src="../assets/images/publicity3.jpg" class="publicity my-4" alt="Publicidad">
+          </nav>
+          <div class="row g-0">
+            <div class="col-12 col-md-6">
+            <img src="/assets/images/coffeeBag.png" class="w-100 h-100 py-3" alt="">
+          </div>
+            <div class="col-12 col-md-6 d-flex flex-column justify-content-center mb-5">
+              <div class="container-fluid d-flex flex-column justify-content-center">
+                <h4 class="titleDetails mb-4">Amazonas Blend</h4>
+              </div>
+              <div class="container-fluid d-flex flex-column justify-content-center">
+                <p>Café originario de Brasil y Colombia. Su intensidad es intermedia y de acidez leve. Tiene un suave dejo a caramelo y frutos secos.</p>
+                <h3 class="price">$2600</h3>
+                <a href="#" class="btn btnCoffee">Agregar al carrito</a>
+              </div>
             </div>
           </div>
         </div>
-      </section>
+        <!-- PUBLICITY -->
+        <div class="advertisement d-none d-md-flex flex-column justify-content-center px-3 col-md-2">
+          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="../assets/images/publicity.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="../assets/images/publicity2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/images/publicity3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
     </main>
     <!-- FOOTER -->
     <footer>

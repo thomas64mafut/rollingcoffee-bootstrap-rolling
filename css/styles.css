@@ -1,8 +1,10 @@
 :root {
   --brown-bs-: rgb(101, 54, 42);
-  --sweetMint-bs-: rgb(255, 255, 255);
+  --white-bs-: rgb(255, 255, 255);
+  --sweetMint-bs-: rgb(233, 232, 232);
   --mint-bs-: rgb(117, 209, 195);
-  --ashGrey-bs-: rgba(119,109,109,1);
+  --ashGrey2-bs-: rgb(182, 182, 182);
+  --ashGrey-bs-: rgba(119, 109, 109, 1);
   --sonicSilver-bs-: rgb(99, 91, 91);
 }
 @font-face {
@@ -22,13 +24,13 @@
 }
 .btnCoffee {
   background-color: var(--mint-bs-);
-  color: var(--sweetMint-bs-);
+  color: var(--white-bs-);
   border-radius: 30px;
   transition: 0.1s;
 }
 .btnCoffee:hover {
   background-color: var(--brown-bs-);
-  color: var(--sweetMint-bs-);
+  color: var(--white-bs-);
   border-color: var(--brown-bs-);
   transition: 0.1s;
 }
@@ -38,48 +40,48 @@
   width: 16rem;
   background-image: url(../assets/images/whiteIsologo.png);
   background-size: cover;
-  background-position:center;
+  background-position: center;
 }
 body {
   font-family: "Barlow Condensed", sans-serif;
 }
-.containerHeader{
+.containerHeader {
   background-color: var(--sonicSilver-bs-);
 }
-.containerHeader .collapse > ul a{
-  color: var(--sweetMint-bs-);
-  font-family: 'Barlow Condensed', sans-serif;
+.containerHeader .collapse > ul a {
+  color: var(--white-bs-);
+  font-family: "Barlow Condensed", sans-serif;
   font-size: 1.5rem;
 }
-.containerHeader .collapse > ul a:hover{
+.containerHeader .collapse > ul a:hover {
   color: var(--mint-bs-);
-  transition:.8s;
+  transition: 0.8s;
 }
-.botonBuscar button:hover{
-  color:var(--sweetMint-bs-);
-  background-color:var(--brown-bs-);
+.botonBuscar button:hover {
+  color: var(--white-bs-);
+  background-color: var(--brown-bs-);
 }
 .search {
-  margin-right:-4rem;
+  margin-right: -4rem;
   border-radius: 15px;
 }
-.collapseNavButton{
+.collapseNavButton {
   border-color: var(--mint-bs-);
 }
-.botonBuscar button{
-  color: var(--sweetMint-bs-);
+.botonBuscar button {
+  color: var(--white-bs-);
   background-color: var(--mint-bs-);
   width: 6.6rem;
   font-size: 1rem;
   border-radius: 15px;
   border-color: var(--mint-bs-);
-} 
-.botonBuscar button:hover{
-  color:var(--sweetMint-bs-);
-  background-color:var(--brown-bs-);
+}
+.botonBuscar button:hover {
+  color: var(--white-bs-);
+  background-color: var(--brown-bs-);
 }
 .search {
-  margin-right:-4rem;
+  margin-right: -4rem;
   border-radius: 15px;
 }
 /* CONTENEDORES DEL MAIN */
@@ -92,11 +94,11 @@ body {
 .advertisement {
   background-color: var(--ashGrey-bs-);
 }
-.videoContainer{
+.videoContainer {
   width: 100%;
   height: 80vh;
 }
-.videoContainer > video{
+.videoContainer > video {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -182,7 +184,7 @@ h2 {
   background: rgb(117, 209, 195);
 }
 /* EFECTOS CARDS */
-.container__cards{
+.container__cards {
   max-width: 100%;
   margin: auto;
   margin-top: 1rem;
@@ -190,36 +192,44 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
 }
-.card{
-  width: 70%;
+.col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 85%;
+  height: 100%;
   margin: 10px;
   transition: all 300ms;
+  background: 0;
+  border: 0;
 }
-.card:hover{
-  width: 17rem;
+.card:hover {
+  width: 85%;
+  height: 100%;
 }
-.card .cover{
+.card .cover {
   width: 100%;
   height: 15rem;
   position: relative;
   overflow: hidden;
 }
-.card .cover img{
-  width: 13rem;
+.card .cover img {
+  width: 10rem;
   height: 17rem;
   display: block;
   margin: auto;
   position: relative;
   top: 40px;
   z-index: 1;
-  filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5));
   transition: all 400ms;
 }
-.card:hover .cover img{
+.card:hover .cover img {
   top: 0px;
   filter: none;
 }
-.card .imgBack{
+.card .imgBack {
   width: 100%;
   height: 13rem;
   position: absolute;
@@ -229,27 +239,28 @@ h2 {
   border-radius: 20px;
   transition: all 300ms;
 }
-.card:nth-of-type(1) .imgBack{
+.card:nth-of-type(1) .imgBack {
   background-image: url(../assets/images/cardBackground.jpg);
 }
-.card:hover .imgBack{
+.card:hover .imgBack {
   bottom: -40px;
 }
-.card .description{
-  background: white;
+.card .description {
+  background: var(--white-bs-);
   margin-top: -10px;
   padding: 10px;
+  border: 1px var(--ashGrey2-bs-) solid;
   border-radius: 0px 0px 20px 20px;
   transition: all 300ms;
 }
-.card:hover .description{
+.card:hover .description {
   padding: 20px 10px;
 }
-.card .description h2{
+.card .description h2 {
   margin-top: 10px;
   font-size: 1.8rem;
 }
-.card .description p{
+.card .description p {
   margin-top: 10px;
   font-size: 0.9rem;
 }
@@ -268,7 +279,7 @@ h2 {
   border: none;
 }
 /* PUBLICIDAD */
-.publicity{
+.publicity {
   height: 45vh;
   width: 14vw;
   padding-left: 1rem;

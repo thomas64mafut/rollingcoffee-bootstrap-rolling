@@ -103,6 +103,7 @@ body {
   height: 100%;
   object-fit: cover;
 }
+
 /* TITULOS */
 h2 {
   font-family: victorBoldItalic;
@@ -264,6 +265,10 @@ h2 {
   margin-top: 10px;
   font-size: 0.9rem;
 }
+
+#capsulasCafe .cover img {
+  width: 80%;
+}
 /* ESTILO PAGINADO */
 .pagination .active a {
   background-color: var(--mint-bs-);
@@ -289,10 +294,20 @@ h2 {
 /* FOOTER */
 .footer {
   background-color: var(--sonicSilver-bs-);
+  color: white;
+}
+.footer img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media (max-width: 768px) {
   .advertisement {
     display: none;
+  }
+  .imgProductsDetails {
+    max-height: 70%;
+    width: 70%;
   }
 }
 @media (max-width: 992px) {
@@ -317,5 +332,8 @@ h2 {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+  .footer img {
+    max-width: 60%;
   }
 }

@@ -94,7 +94,7 @@ body {
 }
 .center {
   background-color: var(--sweetMint-bs-);
-  height: 100vh;
+  height: 100%;
   padding: 0;
 }
 .advertisement {
@@ -200,9 +200,9 @@ body {
   text-decoration: none;
 }
 .titleDetails{
-  border-top: 1px solid var(--mint-bs-);
-  padding-top: 3rem;
+  padding-top: 1rem;
   font-size: 2rem;
+  border-bottom: 1px solid var(--mint-bs-);
 }
 /* PUBLICIDAD */
 .publicity{
@@ -265,4 +265,26 @@ font-family: 'Barlow Condensed', sans-serif;
   .detailsNavbar {
     display: none;
   }
+}
+
+.mainContainer {
+  height: calc(100vh - 8rem);
+  overflow-y: 0;
+}
+.imgContainer {
+  background-image: url("../assets/images/coffeeBag.png");
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.errorContainer h2 {
+  font-size: 80px;
+}
+
+.errorContainer h3 {
+  font-size: 20px;
+}
+
+.errorContainer > button {
+  width: 12rem;
 }

@@ -55,10 +55,6 @@ body {
   color: var(--mint-bs-);
   transition:.8s;
 }
-.botonBuscar button{
-  width: 6.3rem;
-  font-size: 1.05rem;
-} 
 .botonBuscar button:hover{
   color:var(--sweetMint-bs-);
   background-color:var(--brown-bs-);
@@ -73,7 +69,7 @@ body {
 .botonBuscar button{
   color: var(--sweetMint-bs-);
   background-color: var(--mint-bs-);
-  width: 6.3rem;
+  width: 6.6rem;
   font-size: 1rem;
   border-radius: 15px;
   border-color: var(--mint-bs-);
@@ -186,80 +182,76 @@ h2 {
   background: rgb(117, 209, 195);
 }
 /* EFECTOS CARDS */
-.card {
-  width: 80%;
-  height: 85%;
-  border: 1px solid;
-  border-color: var(--sweetMint-bs-);
-  cursor: pointer;
-  transition: all 0.25s ease;
-  backface-visibility: hidden;
-}
-.card:hover {
-  transform: scale(0.9);
-}
-.card:hover:after {
-  height: 5rem;
-}
-.card:hover .card-body p {
-  margin-bottom: 0;
-  opacity: 1;
-}
-.card:hover img {
-  transform: scale(1.25);
-  opacity: 25%;
-}
-.card::after {
-  width: 100%;
-  content: "";
-  left: 0;
-  bottom: 0;
-  height: 2rem;
-  position: absolute;
-  background: linear-gradient(
-    180deg,
-    rgba(103, 103, 103, 0) 0%,
-    rgba(75, 75, 75, 0.999) 100%
-  );
-  z-index: 20;
-  transition: all 0.25s ease;
-  border-radius: 3px;
-}
-.card img {
-  height: 100%;
-  z-index: 10;
-  transition: all 0.25s ease;
-}
-.card .card-body {
-  z-index: 30;
-  position: absolute;
-  bottom: 0;
-  color: rgb(27, 27, 27);
-  border-radius: 10px;
-  font-weight: 400;
-  height: 100%;
-  width: 100%;
-}
-.card .card-body > p {
-  font-size: 1rem;
-  opacity: 0;
-  transition: all 0.25s ease;
+.container__cards{
+  max-width: 100%;
+  margin: auto;
+  margin-top: 1rem;
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  font-family: "Barlow Condensed", sans-serif;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.cardButton {
-  border-radius: 30px;
-  border: 1px solid var(--mint-bs-);
-  margin-top: 0.5rem;
+.card{
+  width: 70%;
+  margin: 10px;
+  transition: all 300ms;
 }
-.cardButton:hover {
-  background-color: var(--mint-bs-);
-  color: var(--sweetMint-bs-);
-  transition: 0.1s;
-  border: 1px solid var(--mint-bs-);
-  border-radius: 30px;
+.card:hover{
+  width: 17rem;
+}
+.card .cover{
+  width: 100%;
+  height: 15rem;
+  position: relative;
+  overflow: hidden;
+}
+.card .cover img{
+  width: 13rem;
+  height: 17rem;
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 40px;
+  z-index: 1;
+  filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5));
+  transition: all 400ms;
+}
+.card:hover .cover img{
+  top: 0px;
+  filter: none;
+}
+.card .imgBack{
+  width: 100%;
+  height: 13rem;
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  background-size: cover;
+  border-radius: 20px;
+  transition: all 300ms;
+}
+.card:nth-of-type(1) .imgBack{
+  background-image: url(../assets/images/cardBackground.jpg);
+}
+.card:hover .imgBack{
+  bottom: -40px;
+}
+.card .description{
+  background: white;
+  margin-top: -10px;
+  padding: 10px;
+  border-radius: 0px 0px 20px 20px;
+  transition: all 300ms;
+}
+.card:hover .description{
+  padding: 20px 10px;
+}
+.card .description h2{
+  margin-top: 10px;
+  font-size: 1.8rem;
+}
+.card .description p{
+  margin-top: 10px;
+  font-size: 0.9rem;
 }
 /* ESTILO PAGINADO */
 .pagination .active a {

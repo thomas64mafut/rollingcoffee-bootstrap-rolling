@@ -1,0 +1,82 @@
+/* NAVBAR */
+.detailsNavbar {
+  background: rgb(158, 144, 144);
+  background: linear-gradient(
+    270deg,
+    rgba(158, 144, 144, 1) 17%,
+    rgba(139, 126, 126, 1) 81%
+  );
+}
+.homeButton,
+.navbarArrow {
+  color: var(--mint-bs-);
+}
+.homeIcon {
+  color: var(--mint-bs-);
+  align-items: center;
+  margin-top: -5px;
+  height: 20px;
+  width: 22px;
+}
+.aButtonNav {
+  color: black;
+  text-decoration: none;
+}
+.aButtonNav:hover,
+.homeIcon:hover {
+  color: white;
+  text-decoration: none;
+}
+.titleDetails {
+  padding-top: 1rem;
+  font-size: 2rem;
+  border-bottom: 1px solid var(--mint-bs-);
+}
+.aboutUs h1 {
+  font-family: pacifico;
+}
+.aboutUs p {
+  font-size: 16px;
+}
+.abImg1 {
+  background-image: url("https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-position: center center;
+  background-size: cover;
+}
+.abImg2 {
+  background-image: url("https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-position: center center;
+  background-size: cover;
+}
+.aldana {
+  background-image: url("/assets/images/aldana.jpeg");
+  background-position: center center;
+  background-size: cover;
+}
+.thomas {
+  background-image: url("/assets/images/thomas.png");
+  background-position: center center;
+  background-size: cover;
+}
+.alexia {
+  background-image: url("/assets/images/alexia.jpeg");
+  background-position: center center;
+  background-size: cover;
+}
+.jose {
+  background-image: url("/assets/images/jose.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+.profilePics div {
+  height: 25rem;
+}
+
+@media (max-width: 768px) {
+  .abImg1 {
+    height: 20rem;
+  }
+  .abImg2 {
+    height: 20rem;
+  }
+}

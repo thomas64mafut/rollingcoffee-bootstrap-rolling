@@ -9,11 +9,11 @@
 }
 @font-face {
   font-family: pacifico;
-  src: url(../assests/fonts/Pacifico.ttf);
+  src: url(../assets/fonts/Pacifico.ttf);
 }
 @font-face {
   font-family: victorBoldItalic;
-  src: url(../assests/fonts/VictorMono-BoldItalic.otf);
+  src: url(../assets/fonts/VictorMono-BoldItalic.otf);
 }
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
 
@@ -21,6 +21,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Barlow Condensed", sans-serif;
 }
 .btnCoffee {
   background-color: var(--mint-bs-);

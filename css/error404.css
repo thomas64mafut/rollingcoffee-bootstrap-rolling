@@ -1,3 +1,6 @@
+:root {
+--mint-bs-: rgb(117, 209, 195);
+}
 h1 {
   margin: 0;
   padding: 0;
@@ -11,7 +14,7 @@ body {
   background-color: var(--sweetMint-bs-);
 }
 .mainContainer {
-  height: calc(100vh - 8rem);
+  height: 100vh;
   overflow-y: 0;
 }
 .imgContainer {
@@ -26,6 +29,7 @@ body {
 
 .errorContainer h3 {
   font-size: 20px;
+  color: var(--mint-bs-);
 }
 
 .errorContainer > button {

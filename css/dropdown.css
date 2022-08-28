@@ -1,0 +1,20 @@
+.btnDropdown:focus{
+    background-color: var(--mint-bs-);
+    color: white;
+}
+.btnDropdown {
+    background-color: var(--mint-bs-);
+    color: var(--white-bs-);
+    border-radius: 30px;
+    transition: 0.1s;
+  }
+.btnDropdown:hover {
+    background-color: var(--brown-bs-);
+    color: var(--white-bs-);
+    border-color: var(--brown-bs-);
+    transition: 0.1s;
+}
+.dropdownMenu:hover{
+    background-color: var(--mint-bs-);
+    color: white;
+}

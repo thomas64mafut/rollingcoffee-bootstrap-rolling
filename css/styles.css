@@ -58,32 +58,37 @@ body {
   color: var(--mint-bs-);
   transition: 0.8s;
 }
-.botonBuscar button:hover {
-  color: var(--white-bs-);
-  background-color: var(--brown-bs-);
+.collapseNavButton {
+  border-color: var(--mint-bs-);
 }
-.search {
-  margin-right: -4rem;
-  border-radius: 15px;
+.dropDown{
+  z-index: 5;
 }
 .collapseNavButton {
   border-color: var(--mint-bs-);
 }
-.botonBuscar button {
-  color: var(--white-bs-);
+.btnDropdown{
+  width: 10rem;
+}
+.btnDropdown:focus{
   background-color: var(--mint-bs-);
-  width: 6.6rem;
-  font-size: 1rem;
-  border-radius: 15px;
-  border-color: var(--mint-bs-);
+  color: white;
 }
-.botonBuscar button:hover {
+.btnDropdown {
+  background-color: var(--mint-bs-);
   color: var(--white-bs-);
-  background-color: var(--brown-bs-);
+  border-radius: 30px;
+  transition: 0.1s;
 }
-.search {
-  margin-right: -4rem;
-  border-radius: 15px;
+.btnDropdown:hover {
+  background-color: var(--brown-bs-);
+  color: var(--white-bs-);
+  border-color: var(--brown-bs-);
+  transition: 0.1s;
+}
+.dropdownMenu:hover{
+  background-color: var(--mint-bs-);
+  color: white;
 }
 /* CONTENEDORES DEL MAIN */
 .sidebar {

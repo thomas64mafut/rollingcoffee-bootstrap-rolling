@@ -17,57 +17,59 @@
   <body>
     <header>
       <div class="containerHeader">
-          <nav class="navbar navbar-expand-lg navbar-light">
-              <div class="container-fluid p-2">
-                  <a href="../index.html" class="logo"></a>           
-                <div class="collapse navbar-collapse p-2" id="navbarTogglerDemo03">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link ms-lg-5" href="#">Contacto</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="/pages/aboutUs.html">Acerca de nosotros</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="/pages/login.html">Login</a>
-                      </li>
-                    </ul>
-                    <div class="botonBuscar d-flex flex-row align-items-center">
-                      <input type="text" class="form-control search" placeholder="¿Que buscas?" aria-label="Search">
-                      <div class="dropdown">
-                        <button
-                          class="dropdownButton btn btn-secondary dropdown-toggle"
-                          type="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false">Buscar
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                          <li>
-                            <a class="dropdown-item" href="#">Café de Especialidad</a>
-                          </li>
-                          <li><a class="dropdown-item" href="#">Amazonas Blend</a></li>
-                          <hr>
-                          <li><a class="dropdown-item" href="#">Café Orgánico</a></li>
-                          <li><a class="dropdown-item" href="#">Intenso</a></li>
-                          <hr>
-                          <li><a class="dropdown-item" href="#">Café Tostado</a></li>
-                          <li><a class="dropdown-item" href="#">Blend Original Tostado</a></li>
-                          <hr>
-                          <li><a class="dropdown-item" href="#">Cápsulas</a></li>
-                          <li><a class="dropdown-item" href="#">Cocoa Truffle</a></li>
-                        </ul>
-                      </div>
-                     </form>
-                   </div>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid p-2">
+            <a href="../index.html" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBtn" aria-controls="navbarBtn" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>    
+            <div class="collapse navbar-collapse p-2" id="navbarBtn">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#contactModal">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/aboutUs.html">Acerca de nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html">Login</a>
+                </li>
+              </ul>
+              <div class="dropdown">
+                <a class="btn dropdown-toggle btnDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search pe-1 pb-1" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg>Buscar
+                </a>
+                <ul class="dropdown-menu dropdown-menu-start dropdown-menu-lg-end dropDown">
+                  <li>
+                    <a class="dropdown-item dropdownMenu" href="#">Café de Especialidad</a>
+                  </li>
+                  <li><a class="dropdown-item dropdownMenu" href="#">Amazonas Blend</a></li>
+                  <li><a class="dropdown-item dropdownMenu" href="#">Amazonas Blend</a></li>
+                  <li><a class="dropdown-item dropdownMenu" href="#">Amazonas Blend</a></li>
+                  <hr>
+                  <li><a class="dropdown-item dropdownMenu" href="#">Café Orgánico</a></li>
+                  <li><a class="dropdown-item dropdownMenu" href="#">Intenso</a></li>
+                  <li><a class="dropdown-item dropdownMenu" href="#">Intenso</a></li>
+                  <li><a class="dropdown-item dropdownMenu" href="#">Intenso</a></li>
+                  <hr>
+                  <li><a class="dropdown-item dropdownMenu" href="#">Café Tostado</a></li>
+                  <li><a class="dropdown-item dropdownMenu" href="#">Blend Original Tostado</a></li>
+                  <li><a class="dropdown-item dropdownMenu" href="#">Blend Original Tostado</a></li>
+                  <li><a class="dropdown-item dropdownMenu" href="#">Blend Original Tostado</a></li>
+                  <hr>
+                  <li><a class="dropdown-item dropdownMenu" href="#">Cápsulas</a></li>
+                  <li><a class="dropdown-item dropdownMenu" href="#">Cocoa Truffle</a></li>
+                  <li><a class="dropdown-item dropdownMenu" href="#">Cocoa Truffle</a></li>
+                  <li><a class="dropdown-item dropdownMenu" href="#">Cocoa Truffle</a></li>
+                </ul>
               </div>
-            </nav>
-      </div>
+            </div>
+          </div>
+          </nav>
+    </div>
     </header>
-    <!-- MAIN -->
     <main>
       <div class="container-fluid videoContainer m-0 p-0">
         <video autoplay src="/assets/videos/cafe.mp4" loop class="mb-0 p-0"></video>
@@ -82,8 +84,8 @@
               elevar, producir, y proveer calidad de vida, mediante el suministro salubre y accesible, de productos y servicios orgánicos, y de calidad, que empoderen nuestras raíces y patrimonio cultural, no como una opción, sino como una necesidad de bienestar global.</p>
             </div>
           </div>
-          <div style="background-color: blue;" class="col-6 col-md-3 abImg1"></div>
-          <div style="background-color: yellow;" class="col-6 col-md-3 abImg2"></div>
+          <div class="col-6 col-md-3 aboutUsImg1"></div>
+          <div class="col-6 col-md-3 aboutUsImg2"></div>
       </div>
       <div class="row g-0 profilePics">
         <div class="col-12 col-sm-6 col-lg-3 aldana"></div>
@@ -91,13 +93,34 @@
         <div class="col-12 col-sm-6 col-lg-3 alexia"></div>
         <div class="col-12 col-sm-6 col-lg-3 jose"></div>
       </div>
+      <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header contactModalHeader">
+              <h5 class="modal-title" id="modalLabel">Contacto</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="formControl" class="form-label">Ingrese su correo electrónico</label>
+                <input type="email" class="form-control contactInput" id="formControl" placeholder="nombre@ejemplo.com">
+              </div>
+              <div class="mb-3">
+                <label for="textareaMessage" class="form-label">Ingrese su consulta</label>
+                <textarea class="form-control contactInput" id="textareaMessage" rows="3" maxlength="121" minlength="10" placeholder="Ingrese su mensaje y nos comunicaremos a la brevedad" ></textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btnCoffee">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
-    <!-- FOOTER -->
     <footer class="footer">
       <div class="row g-0">
         <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center align-items-center flex-column p-4">
         <img src="/assets/images/rollingFooter.png" alt="" class="w-100">
-
       </div>
         <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center align-items-center flex-column p-4">
           <p class="h5 mb-3">Visitanos</p>
@@ -124,7 +147,6 @@
               />
             </svg>
           </div>
-
           <div class="mb-3">
             <a
               class="text-white text-decoration-none"
@@ -148,7 +170,6 @@
               />
             </svg>
           </div>
-
           <div class="mb-3">
             <a
               class="text-white text-decoration-none"
@@ -175,7 +196,6 @@
         </div>
         <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center align-items-center flex-column p-4">
           <p class="h5 mb-3">Seguinos</p>
-
           <div class="mb-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -197,7 +217,6 @@
               >Facebook</a
             >
           </div>
-
           <div class="mb-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -218,7 +237,6 @@
               >Twitter</a
             >
           </div>
-
           <div class="mb-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -242,7 +260,6 @@
         </div>
         <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center align-items-center flex-column p-4">
           <p class="h5">Trabaja con nosotros</p>
-
           <form class="d-flex align-items-center flex-column">
             <div class="">
               <label for="exampleInputEmail1" class="form-label"
@@ -263,7 +280,6 @@
           &copy RollingCoffe todos los derechos reservados
         </p>
       </div>
-      
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"

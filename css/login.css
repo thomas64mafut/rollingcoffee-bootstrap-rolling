@@ -49,7 +49,9 @@
   width: 12rem;
 }
 .modal-header{
-  background-color: var( --mint-bs-) ;
+  background: rgb(117,209,195);
+  background: radial-gradient(circle, rgba(117,209,195,0.919502835313813) 28%, rgba(73,184,167,1) 66%);
+  color: white;
 }
 .modal-body p{
   margin-top: 2rem;

@@ -26,7 +26,7 @@
             <div class="collapse navbar-collapse p-2" id="navbarBtn">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contacto</a>
+                  <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#contactModal">Contacto</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="../pages/aboutUs.html">Acerca de nosotros</a>
@@ -70,11 +70,8 @@
           </nav>
     </div>
     </header>
-    <!-- MAIN -->
-    <main>
       <main>
         <div class="row g-0">
-          <!-- SIDEBAR -->
           <div class="sidebar col-3 col-md-2 ps-2">
               <ul class="list-group mt-5">
                 <li class="list-group-item listSidebar">
@@ -91,7 +88,6 @@
                 </li>
               </ul>
           </div>
-          <!-- CENTER -->
           <div class="col-9 col-md-8 p-0">
             <nav class="navbar detailsNavbar d-none d-md-block">
               <div class="container-fluid d-flex flex-row justify-content-end align-items-center">
@@ -137,7 +133,6 @@
               </div>
             </div>
           </div>
-          <!-- PUBLICITY -->
           <div class="advertisement d-none d-md-flex flex-column justify-content-center px-3 col-md-2">
             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
@@ -160,9 +155,30 @@
             </div>
           </div>
         </div>
+        <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header contactModalHeader">
+                <h5 class="modal-title" id="modalLabel">Contacto</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="mb-3">
+                  <label for="formControl" class="form-label">Ingrese su correo electrónico</label>
+                  <input type="email" class="form-control contactInput" id="formControl" placeholder="nombre@ejemplo.com">
+                </div>
+                <div class="mb-3">
+                  <label for="textareaMessage" class="form-label">Ingrese su consulta</label>
+                  <textarea class="form-control contactInput" id="textareaMessage" rows="3" maxlength="121" minlength="10" placeholder="Ingrese su mensaje y nos comunicaremos a la brevedad"></textarea>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btnCoffee">Enviar</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
-    </main>
-    <!-- FOOTER -->
     <footer class="footer">
       <div class="row g-0">
         <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center align-items-center flex-column p-4">

@@ -35,7 +35,6 @@
   border-color: var(--brown-bs-);
   transition: 0.1s;
 }
-/* HEADER */
 .logo {
   height: 4rem;
   width: 16rem;
@@ -90,7 +89,6 @@ body {
   background-color: var(--mint-bs-);
   color: white;
 }
-/* CONTENEDORES DEL MAIN */
 .sidebar {
   background: var(--ashGrey-bs-);
 }
@@ -109,13 +107,10 @@ body {
   height: 100%;
   object-fit: cover;
 }
-
-/* TITULOS */
 h2 {
   font-family: victorBoldItalic;
   color: var(--brown-bs-);
 }
-/* EFECTO SIDEBAR */
 .listSidebar {
   background-color: transparent;
   border: none;
@@ -190,7 +185,6 @@ h2 {
 .sidebar li:last-child a:after {
   background: rgb(117, 209, 195);
 }
-/* EFECTOS CARDS */
 .container__cards {
   max-width: 100%;
   margin: auto;
@@ -271,11 +265,9 @@ h2 {
   margin-top: 10px;
   font-size: 0.9rem;
 }
-
 #capsulasCafe .cover img {
   width: 80%;
 }
-/* ESTILO PAGINADO */
 .pagination .active a {
   background-color: var(--mint-bs-);
   border: none;
@@ -289,7 +281,6 @@ h2 {
   background-color: var(--brown-bs-);
   border: none;
 }
-/* PUBLICIDAD */
 .publicity {
   height: 45vh;
   width: 14vw;
@@ -297,7 +288,14 @@ h2 {
   border-bottom-right-radius: 20px;
   border-top-left-radius: 20px;
 }
-/* FOOTER */
+.contactModalHeader{
+  background: rgb(117,209,195);
+  background: radial-gradient(circle, rgba(117,209,195,0.919502835313813) 28%, rgba(73,184,167,1) 66%);
+  color: white;
+}
+.contactInput{
+  border: 1px solid var(--mint-bs-);
+}
 .footer {
   background-color: var(--sonicSilver-bs-);
   color: white;

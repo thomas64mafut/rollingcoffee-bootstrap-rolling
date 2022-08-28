@@ -32,3 +32,12 @@
   font-size: 2rem;
   border-bottom: 1px solid var(--mint-bs-);
 }
+.price::first-letter {
+  color: var(--mint-bs-);
+}
+.dropdown-item:focus {
+  background-color: var(--mint-bs-);
+}
+.btnCoffee:active {
+  background-color: var(--mint-bs-);
+}

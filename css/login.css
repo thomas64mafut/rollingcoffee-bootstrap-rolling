@@ -1,0 +1,83 @@
+:root {
+  --brown-bs-: rgb(101, 54, 42);
+  --sweetMint-bs-: rgb(255, 255, 255);
+  --mint-bs-: rgb(117, 209, 195);
+  --ashGrey-bs-: rgba(119, 109, 109, 1);
+  --sonicSilver-bs-: rgb(116, 114, 116);
+}
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+
+.btnBack {
+  background-color: var(--mint-bs-);
+  color: var(--sweetMint-bs-);
+  border-radius: 30px;
+  transition: 0.1s;
+  margin-top: 2rem;
+}
+.btnBack:hover {
+  background-color: var(--brown-bs-);
+  color: var(--sweetMint-bs-);
+  border-color: var(--brown-bs-);
+  transition: 0.1s;
+}
+.mainContainer {
+  height: 100%;
+  overflow-y: 0;
+}
+.imgContainer {
+  background-image: url("https://images.pexels.com/photos/977878/pexels-photo-977878.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  background-position: center bottom;
+}
+.loginB h2 {
+  font-size: 50px;
+  color: black;
+  font-family: "Barlow Condensed", sans-serif;
+  margin-bottom: 2rem;
+}
+.loginB{
+  background-color: rgba(255, 255, 255, 0.664);
+  padding: 0.5rem;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.buttonLogin{
+  margin: 1rem;
+  width: 15rem;
+}
+.snsButton{
+  margin: 1rem;
+  width: 12rem;
+}
+.modal-header{
+  background: rgb(117,209,195);
+  background: radial-gradient(circle, rgba(117,209,195,0.919502835313813) 28%, rgba(73,184,167,1) 66%);
+  color: white;
+}
+.modal-body p{
+  margin-top: 2rem;
+}
+.footer {
+  background-color: var(--sonicSilver-bs-);
+}
+@media (max-width: 768px) {
+  .loginContainer {
+    background-image: url("https://images.pexels.com/photos/977878/pexels-photo-977878.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-position: center bottom;
+  }
+}
+@media (max-width: 370px) {
+  .loginContainer h2 {
+    font-size: 35px;
+  }
+  .loginContainer h3 {
+    font-size: 16px;
+  }
+}
+
+
+
+
+
+
+

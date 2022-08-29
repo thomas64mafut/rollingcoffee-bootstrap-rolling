@@ -1,0 +1,42 @@
+.detailsNavbar {
+  background: rgb(158, 144, 144);
+  background: linear-gradient(
+    270deg,
+    rgba(158, 144, 144, 1) 17%,
+    rgba(139, 126, 126, 1) 81%
+  );
+}
+.homeButton,
+.navbarArrow {
+  color: var(--mint-bs-);
+}
+.homeIcon {
+  color: var(--mint-bs-);
+  align-items: center;
+  margin-top: -5px;
+  height: 20px;
+  width: 22px;
+}
+.aButtonNav {
+  color: black;
+  text-decoration: none;
+}
+.aButtonNav:hover,
+.homeIcon:hover {
+  color: white;
+  text-decoration: none;
+}
+.titleDetails {
+  padding-top: 1rem;
+  font-size: 2rem;
+  border-bottom: 1px solid var(--mint-bs-);
+}
+.price::first-letter {
+  color: var(--mint-bs-);
+}
+.dropdown-item:focus {
+  background-color: var(--mint-bs-);
+}
+.btnCoffee:active {
+  background-color: var(--mint-bs-);
+}

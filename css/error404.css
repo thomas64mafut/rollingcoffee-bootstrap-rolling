@@ -1,0 +1,54 @@
+:root {
+--mint-bs-: rgb(117, 209, 195);
+}
+h1 {
+  margin: 0;
+  padding: 0;
+  color: var(--brown-bs-);
+}
+h3 {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--sweetMint-bs-);
+}
+.mainContainer {
+  height: 100vh;
+  overflow-y: 0;
+}
+.imgContainer {
+  background-image: url("https://images.pexels.com/photos/977878/pexels-photo-977878.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.errorContainer h2 {
+  font-size: 80px;
+}
+
+.errorContainer h3 {
+  font-size: 20px;
+  color: var(--mint-bs-);
+}
+
+.errorContainer > button {
+  width: 12rem;
+}
+
+@media (max-width: 768px) {
+  .errorContainer {
+    background-image: url("https://images.pexels.com/photos/977878/pexels-photo-977878.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-position: center bottom;
+  }
+}
+@media (max-width: 370px) {
+  .errorContainer h2 {
+    font-size: 50px;
+  }
+
+  .errorContainer h3 {
+    font-size: 16px;
+  }
+}

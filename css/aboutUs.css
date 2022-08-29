@@ -70,7 +70,12 @@
 .profilePics div {
   height: 25rem;
 }
-
+.membersDescription{
+  background-color:rgb(219,219,219);
+  background: radial-gradient(circle, rgba(219,219,219,0.919502835313813) 28%, rgba(255,255,255,0.6113795860140931) 66%);
+  color: var(--brown-bs-);
+  font-family: pacifico;
+}
 @media (max-width: 768px) {
   .abImg1 {
     height: 20rem;

@@ -62,7 +62,9 @@
                 class="container-fluid d-flex flex-wrap justify-content-center"
               >
                 <div class="d-grid">
-                  <button type="submit" class="btn btnCoffee buttonLogin">Login</button>
+                  <button type="submit" class="btn btnCoffee buttonLogin">
+                    Login
+                  </button>
                 </div>
               </div>
               <div class="my-3">
@@ -70,13 +72,13 @@
                   >¿No tienes cuenta?
                   <a href="../pages/error404.html">Regístrate</a></span
                 >
-                <br>
+                <br />
                 <button
-                    type="submit"
-                    class="btn"
-                    data-bs-toggle="modal"
-                    data-bs-target="#contenido-modal"
-                  >
+                  type="submit"
+                  class="btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#contenido-modal"
+                >
                   <a href="#">Restablecer contraseña</a>
                 </button>
               </div>
@@ -84,14 +86,28 @@
                 class="container-fluid d-flex flex-wrap justify-content-center"
               >
                 <div class="d-grid">
-                  <button type="submit" class="btn btn-primary snsButton">
-                    Ingresar con Facebook
-                  </button>
+                  <a
+                    class="btn btn-primary snsButton"
+                    href="/pages/error404.html"
+                  >
+                    <img
+                      src="/assets/images/facebookLogo.png"
+                      alt=""
+                      class="w-75 h-75"
+                    />
+                  </a>
                 </div>
                 <div class="d-grid">
-                  <button type="submit" class="btn btn-danger snsButton">
-                    Ingresar con Google
-                  </button>
+                  <a
+                    class="btn btn-danger snsButton"
+                    href="/pages/error404.html"
+                  >
+                    <img
+                      src="/assets/images/googleLogo.png"
+                      alt=""
+                      class="w-75 h-100"
+                    />
+                  </a>
                 </div>
               </div>
             </form>
@@ -103,9 +119,11 @@
     <footer class="footer">
       <div class="row g-0">
         <div
-          class="col-12 col-sm-6 col-md-3 d-flex justify-content-center align-items-center flex-column p-4"
+          class="col-12 col-sm-6 col-md-3 p-4 d-flex justify-content-center align-items-center flex-column"
         >
-          <img src="/assets/images/rollingFooter.png" alt="" class="w-100" />
+          <a href="./index.html" class="d-flex justify-content-center"
+            ><img src="/assets/images/rollingFooter.png" alt="" class="w-100"
+          /></a>
         </div>
         <div
           class="col-12 col-sm-6 col-md-3 d-flex justify-content-center align-items-center flex-column p-4"
@@ -134,6 +152,7 @@
               />
             </svg>
           </div>
+
           <div class="mb-3">
             <a
               class="text-white text-decoration-none"
@@ -157,6 +176,7 @@
               />
             </svg>
           </div>
+
           <div class="mb-3">
             <a
               class="text-white text-decoration-none"
@@ -185,6 +205,7 @@
           class="col-12 col-sm-6 col-md-3 d-flex justify-content-center align-items-center flex-column p-4"
         >
           <p class="h5 mb-3">Seguinos</p>
+
           <div class="mb-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -206,6 +227,7 @@
               >Facebook</a
             >
           </div>
+
           <div class="mb-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -226,6 +248,7 @@
               >Twitter</a
             >
           </div>
+
           <div class="mb-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -251,6 +274,7 @@
           class="col-12 col-sm-6 col-md-3 d-flex justify-content-center align-items-center flex-column p-4"
         >
           <p class="h5">Trabaja con nosotros</p>
+
           <form class="d-flex align-items-center flex-column">
             <div class="">
               <label for="exampleInputEmail1" class="form-label"
@@ -263,9 +287,9 @@
                 aria-describedby="emailHelp"
               />
             </div>
-            <button type="submit" class="btn btnCoffee w-50 mt-3">
+            <a class="btn btnCoffee w-50 mt-3" href="../pages/error404.html">
               Enviar
-            </button>
+            </a>
           </form>
         </div>
       </div>
@@ -300,18 +324,10 @@
             </p>
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btnCoffee"
-              data-bs-dismiss="modal"
-            >
+            <button type="button" class="btn btnCoffee" data-bs-dismiss="modal">
               Enviar
             </button>
-            <button
-              type="button"
-              class="btn btnCoffee"
-              data-bs-dismiss="modal"
-            >
+            <button type="button" class="btn btnCoffee" data-bs-dismiss="modal">
               Cerrar
             </button>
           </div>

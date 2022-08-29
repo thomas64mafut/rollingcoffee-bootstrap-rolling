@@ -1,12 +1,3 @@
-:root {
-  --brown-bs-: rgb(101, 54, 42);
-  --sweetMint-bs-: rgb(255, 255, 255);
-  --mint-bs-: rgb(117, 209, 195);
-  --ashGrey-bs-: rgba(119, 109, 109, 1);
-  --sonicSilver-bs-: rgb(116, 114, 116);
-}
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
-
 .btnBack {
   background-color: var(--mint-bs-);
   color: var(--sweetMint-bs-);
@@ -31,29 +22,33 @@
 }
 .loginB h2 {
   font-size: 50px;
-  color: black;
-  font-family: "Barlow Condensed", sans-serif;
+  color: var(--brown-bs-);
+  font-family: pacifico;
   margin-bottom: 2rem;
 }
-.loginB{
+.loginB {
   background-color: rgba(255, 255, 255, 0.664);
   padding: 0.5rem;
   font-family: "Barlow Condensed", sans-serif;
 }
-.buttonLogin{
+.buttonLogin {
   margin: 1rem;
   width: 15rem;
 }
-.snsButton{
+.snsButton {
   margin: 1rem;
   width: 12rem;
 }
-.modal-header{
-  background: rgb(117,209,195);
-  background: radial-gradient(circle, rgba(117,209,195,0.919502835313813) 28%, rgba(73,184,167,1) 66%);
+.modal-header {
+  background: rgb(117, 209, 195);
+  background: radial-gradient(
+    circle,
+    rgba(117, 209, 195, 0.919502835313813) 28%,
+    rgba(73, 184, 167, 1) 66%
+  );
   color: white;
 }
-.modal-body p{
+.modal-body p {
   margin-top: 2rem;
 }
 .footer {
@@ -74,10 +69,3 @@
     font-size: 16px;
   }
 }
-
-
-
-
-
-
-

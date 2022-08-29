@@ -31,11 +31,20 @@
   font-size: 2rem;
   border-bottom: 1px solid var(--mint-bs-);
 }
-.aboutUs h1 {
+.aboutUs h1,
+.profilePics h1 {
   font-family: pacifico;
+  margin-bottom: 2rem;
 }
 .aboutUs p {
   font-size: 16px;
+}
+
+.profilePics div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
 }
 .aboutUsImg1 {
   background-image: url("https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
@@ -72,10 +81,10 @@
 }
 
 @media (max-width: 768px) {
-  .abImg1 {
-    height: 20rem;
+  .aboutUsImg1 {
+    height: 20rem !important;
   }
-  .abImg2 {
-    height: 20rem;
+  .aboutUsImg2 {
+    height: 20rem !important;
   }
 }
